@@ -12,11 +12,23 @@ module.exports = appInfo => {
    **/
   const config = exports = {};
 
+
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1594135922246_9339';
 
   // add your middleware config here
   config.middleware = [];
+
+  exports.mongo = {
+    client: {
+      host: '127.0.0.1',
+      port: '27017',
+      name: 'MANHUADAO',
+      user: '',
+      password: '',
+      options: {}
+    },
+  };
 
   // add your user config here
   const userConfig = {
